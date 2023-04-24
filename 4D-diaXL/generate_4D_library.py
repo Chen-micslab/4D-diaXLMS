@@ -151,7 +151,7 @@ def genenrate_all_crosslink_fragment(datadir, mgf_dir, outputdir, crosslinker):
 if __name__ == '__main__':
     args = get_args()
     if args.outputdir == None:
-        outputdir = args.resultsdir.split('.mgf')[0]
+        outputdir = args.resultsdir.split('.csv')[0]
     else:
         outputdir = args.outputdir
     genenrate_all_crosslink_fragment(args.resultsdir, args.mgfdir, outputdir, args.crosslinker)
