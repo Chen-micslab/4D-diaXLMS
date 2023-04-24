@@ -35,5 +35,7 @@ python filter_library.py ----filedir './data/merge.csv'
 It will generate two library files 'merge_filter_DIANN_lib.csv' and 'merge_filter_normal_lib.csv', the 'merge_filter_DIANN_lib.csv' file could be directly used by DIA-NN software.
 ### 4. Analysis diaPASEF data by DIA-NN software with 4D cross-linking library
 DIA-NN (version 1.8.1) was used to process raw (.d) file using the 4D cross-linking spectral library. FASTA file was not selected. Other parameters was set as follows: ms1 accuracy, 15 ppm; ms2 accuracy, 15 ppm; precursor FDR, 1%; neural network class, single-pass model; quantification strategy, robust LC; cross-run normalisation, RT-dependent.
+## License
+4D-diaXL is distributed under an Apache License. See the LICENSE file for details.
 ## Contacts
 Please report any problems directly to the github issue tracker. Also, you can send feedback to 1019524103@qq.com.
