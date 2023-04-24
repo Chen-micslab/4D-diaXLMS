@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<method>
+<submethods>
+<submethod program="DataAnalysis" revision="0">
+<name>Shotgun PASEF ProteinAnalysis.m</name>
+<files>
+<file name="DataAnalysis.Method"/>
+</files>
+</submethod>
+</submethods>
+<locked>false</locked>
+<readonly>false</readonly>
+<comment></comment>
+</method>
