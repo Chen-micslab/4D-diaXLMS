@@ -4,7 +4,8 @@
 ## Guide to use 4D-diaXL
 ### 1. Analysis ddaPASEF data by pLink2 software
 The DIA analysis in 4D-diaXL is library-based search, so you need to establish a experimental spectrum library on ddaPASEF mode.
-#### a. Convert the .d file of ddaPASEF data to mgf file using Bruker Compass DataAnalysis software (version 5.3.236.352) with 'Shotgun PASEF ProteinAnalysis.m' method
+#### a. Convert ddaPASEF data to mgf file 
+The .d file of ddaPASEF data should be convert to mgf file using Bruker Compass DataAnalysis software (version 5.3.236.352) with 'Shotgun PASEF ProteinAnalysis.m' method.
 #### b. Process the mgf file with 'process_mgf_file.py'
 Example:
 ```
