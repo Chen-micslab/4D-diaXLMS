@@ -294,61 +294,6 @@ def extract_from_peptide(filedir):
     data['type'] = type_list
     data.to_csv(filedir,index=False)
 
-def filter_plink_results(datadir):   ####筛选相同肽中score最小的peptide
-    data = pd.read_csv(f'{datadir}.csv')
-    charge_list = [3, 4, 5]
-    x = 0
-    for z in charge_list:
-        data1 = data[data['charge'] == z]
-        data1 = data1.sort_values('peptide', ignore_index=True)  ####按照肽名字排序
-        peptide_list = np.array(data1['peptide'])
-        name = list(data1)
-        data5 = np.array(data1)  ###用已经有的矩阵来存放新产生的数据，这样可以大大提高速度
-        peptide = peptide_list[0]
-        index_list = []
-        peptide_num = len(set(data1['peptide']))
-        num = 0
-        lenth1 = 0
-        for i in range(len(peptide_list)):
-            if peptide_list[i] == peptide:
-                index_list.append(i)
-            else:
-                num = num + 1
-                print(num,'in',peptide_num)
-                aa = time.clock()
-                data2 = data1.iloc[index_list]
-                bb = time.clock()
-                print(bb-aa)
-                aa = time.clock()
-                q_list = list(data2['score'])
-                psm_list = list(data2['title'])
-                psm = psm_list[int(q_list.index(min(q_list)))]
-                data3 = data2[data2['title'] == psm]
-                lenth2 = len(data3['peptide'])
-                data5[lenth1:(lenth1+lenth2),:] = np.array(data3)  ###把filter出来的数据存入data5
-                lenth1 = lenth1 + lenth2
-                index_list = []
-                index_list.append(i)
-                peptide = peptide_list[i]
-                bb = time.clock()
-                print(bb - aa)
-        data2 = data1.iloc[index_list]
-        q_list = list(data2['score'])
-        psm_list = list(data2['title'])
-        psm = psm_list[int(q_list.index(min(q_list)))]
-        data3 = data2[data2['title'] == psm]
-        lenth2 = len(data3['peptide'])
-        data5[lenth1:(lenth1 + lenth2), :] = np.array(data3)  ###把filter出来的数据存入data5
-        lenth1 = lenth1 + lenth2
-        data6 = pd.DataFrame(data5[:lenth1,:],columns=name)
-        if x == 0:
-            data7 = data6
-            x = 1
-        else:
-            data7 = np.row_stack((data7, data6))
-    data7 = pd.DataFrame(data7, columns=name)
-    data7.to_csv(f'{datadir}_charge345_ion.csv',index = False)
-
 def process_mgf_from_bruker(plinkfile, resultdir):
     x = mgf_from_bruker()
     x.change_plink_filter_crosslink(plinkfile, resultdir)
