@@ -7,7 +7,7 @@ import shutil
 import os
 ######本程序用于将plink生成的结果转换成常规的csv表格并提取其中的rt，k0等关键信息，方便统计分析
 def get_args():  ##设置需要传入的参数
-    parser = argparse.ArgumentParser(description='Predict msms of peptides')
+    parser = argparse.ArgumentParser(description='Process the plink results')
     parser.add_argument('--inputdir', type=str, default=None)  ###plink的report文件夹中交联肽peptide的csv文件名
     parser.add_argument('--outputdir', type=str, default='file')  ###输出的文件路径不包含后缀
     return parser.parse_args()
