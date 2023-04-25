@@ -3,7 +3,7 @@ import pandas as pd
 import argparse
 
 def get_args():  ##设置需要传入的参数
-    parser = argparse.ArgumentParser(description='convert bruker mgf to plink')
+    parser = argparse.ArgumentParser(description='filter 4D crosslinking library')
     parser.add_argument('--filedir', type=str, default=None)  ###输入文件的路径
     return parser.parse_args()
 
