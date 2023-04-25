@@ -5,7 +5,7 @@ import argparse
 import sys
 
 def get_args():  ##设置需要传入的参数
-    parser = argparse.ArgumentParser(description='Predict msms of peptides')
+    parser = argparse.ArgumentParser(description='Generate 4D crosslinking library')
     parser.add_argument('--resultsdir', type=str, default=None)  ###plink的report文件夹中交联肽peptide的csv文件名
     parser.add_argument('--mgfdir', type=str, default=None)  ###输出的文件路径不包含后缀
     parser.add_argument('--outputdir', type=str, default=None)  ###输出的文件路径不包含后缀
