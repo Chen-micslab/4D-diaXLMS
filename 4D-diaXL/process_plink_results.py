@@ -101,7 +101,7 @@ class mgf_from_bruker():  ######适用于brukerDA软件生成的mgf文件经过�
                     charge = data[i,3]
                     score = data[i,6]
                     precursor_Mass_Error = data[i,8]
-                    m_z = m_z = (float(mass) + (int(charge) - 1) * 1.00728)/ int(charge)
+                    m_z = (float(mass) + (int(charge) - 1) * 1.00728)/ int(charge)
                     ccs = calculate_ccs(m_z, int(charge), float(k0))
                     cl_peptide_list.append(cl_peptide)
                     m_z_list.append(m_z)
