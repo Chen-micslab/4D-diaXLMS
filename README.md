@@ -1,6 +1,6 @@
 # 4D-diaXLMS
 ## Introduction
-4D-diaXL is a workflow which could allow the diaPASEF analysis on proteome-wide cross-linking study. 
+4D-diaXLMS is a workflow which could allow the diaPASEF analysis on proteome-wide cross-linking study. 
 ## Guide to use 4D-diaXLMS
 ### 1. Analysis ddaPASEF data by pLink2 software
 The DIA analysis in 4D-diaXL is library-based search, so you need to establish a experimental spectrum library on ddaPASEF mode.
