@@ -1,7 +1,7 @@
-# 4D-diaXL
+# 4D-diaXLMS
 ## Introduction
 4D-diaXL is a workflow which could allow the diaPASEF analysis on proteome-wide cross-linking study. 
-## Guide to use 4D-diaXL
+## Guide to use 4D-diaXLMS
 ### 1. Analysis ddaPASEF data by pLink2 software
 The DIA analysis in 4D-diaXL is library-based search, so you need to establish a experimental spectrum library on ddaPASEF mode.
 #### a. Convert ddaPASEF data to mgf file 
@@ -39,4 +39,4 @@ DIA-NN (version 1.8.1) was used to process raw (.d) file using the 4D cross-link
 ## License
 4D-diaXL is distributed under an Apache License. See the LICENSE file for details.
 ## Contacts
-Please report any problems directly to the github issue tracker. Also, you can send feedback to 1019524103@qq.com.
+Please report any problems directly to the github issue tracker. Also, you can send feedback to moran_chen123@qq.com.
