@@ -31,7 +31,7 @@ It will generate two library files 'example_crosslink_filter_DIANN_lib.csv' and 
 If you have several fractions, there may be some overlap identification between multiple fractions, so it is necessary to remove the overlap. You can merge these 'normal_lib.csv' into one csv file, and then run the 'filter_library.py'
 Example:
 ```
-python filter_library.py ----filedir './data/merge.csv' 
+python filter_library.py --filedir './data/merge.csv' 
 ```
 It will generate two library files 'merge_filter_DIANN_lib.csv' and 'merge_filter_normal_lib.csv', the 'merge_filter_DIANN_lib.csv' file could be directly used by DIA-NN software.
 ### 4. Analysis diaPASEF data by DIA-NN software with 4D cross-linking library
