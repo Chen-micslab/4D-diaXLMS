@@ -40,6 +40,7 @@ class Mass:
                         'BS3': 138.0680795652,
                         'DSSO': 158.0037647489,
                         'DSBU': 196.0847922619,
+                        'SS': -2.016
                        }
 
     crosslinker_hydro_mass = {'DSS': 138.0680795652 + loss_mass['H2O'],
