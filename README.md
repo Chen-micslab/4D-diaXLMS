@@ -40,5 +40,4 @@ It will generate two library files 'merge_filter_DIANN_lib.csv' and 'merge_filte
 DIA-NN (version 1.8.1) was used to process raw (.d) file using the 4D cross-linking spectral library. FASTA file was not selected. Other parameters was set as follows: ms1 accuracy, 15 ppm; ms2 accuracy, 15 ppm; precursor FDR, 1%; neural network class, single-pass model; quantification strategy, robust LC; cross-run normalisation, RT-dependent.
 ## License
 4D-diaXLMS is distributed under an Apache License. See the LICENSE file for details.
-## Contacts
-Please report any problems directly to the github issue tracker. Also, you can send feedback to moran_chen123@qq.com.
+
